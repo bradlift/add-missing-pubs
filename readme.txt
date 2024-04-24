@@ -1,0 +1,15 @@
+geturls.js will accept a CSV (comma delimited) list of URLs, check the status code for each one, log the response + number of retries, and can (optionally) output a CSV results file
+
+Running the script:
+
+while in the URLgrabber directory (command line / terminal / etc)
+
+node geturls.js urlsToCheck.csv
+//outputs to the command line
+
+node geturls.js urlsToCheck.csv > resultsFile.csv
+//will output to the command line, and then create a results file to store the results
+
+** 4-23-24 Edit:
+- added branch for specific use case: validating URLs ending in /app-ads.txt to confirm publishers listed in our sellers.json
+- 
