@@ -4,7 +4,8 @@
   "description": "",
   "main": "geturls.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scouter": "node scouter.js seller_domains.csv > results.csv",
+    "sensu": "node senzu.js results.csv"
   },
   "author": "",
   "license": "ISC",
